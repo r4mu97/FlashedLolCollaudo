@@ -1,0 +1,1 @@
+﻿X101340~Dista-Safe~Interpersonal distance sensor~~~2019

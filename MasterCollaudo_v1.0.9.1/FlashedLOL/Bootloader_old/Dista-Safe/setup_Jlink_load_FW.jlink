@@ -1,0 +1,5 @@
+device NRF52832_XXAA
+si 1
+speed 4000
+erase
+loadfile C:\Program Files (x86)\flashedlol_new\FlashedLOL\bin\Debug\Bootloader\Dista-Safe\dista-safe-sd-bt-app_v3.3.0.hex

@@ -1,0 +1,12 @@
+.vs/
+bin
+obj
+
+errorlog.txt
+*.exe.config
+*.exe.manifest
+*.ldb
+
+packages/
+FlashedLOL/Bootloader/KiwiCall - Pulsante/.DEFAULT.ets.swo
+FlashedLOL/Bootloader/KiwiCall - Pulsante/.DEFAULT.ets.swp

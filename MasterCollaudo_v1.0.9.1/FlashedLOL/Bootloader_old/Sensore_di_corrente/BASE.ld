@@ -1,0 +1,1 @@
+﻿X200600~I Sensor~Sensore di corrente 1200A~5~20~2013

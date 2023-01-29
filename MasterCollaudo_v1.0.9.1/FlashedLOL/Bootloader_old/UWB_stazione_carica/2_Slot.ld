@@ -1,0 +1,1 @@
+﻿X001360~Anticollision charger~EVALUATION SAMPLE 2 SLOT~12~1000~2019

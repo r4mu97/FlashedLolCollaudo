@@ -1,0 +1,1 @@
+﻿X000930~RS232-TTL Converter~RS232 level shifter 12 <-> 5 V~5~10~2017

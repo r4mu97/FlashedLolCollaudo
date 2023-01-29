@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="RemoteLOLID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">RemoteLOL_ID</Value>
+    </Setting>
+    <Setting Name="PredUn" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PredPw" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Telit_GPRS_vOk" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10.00.027</Value>
+    </Setting>
+    <Setting Name="Telit_GPS_vOk" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10.00.118</Value>
+    </Setting>
+    <Setting Name="PredHost" Type="System.String" Scope="User">
+      <Value Profile="(Default)">erp.kiwitron.it</Value>
+    </Setting>
+    <Setting Name="UpdateRequired" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

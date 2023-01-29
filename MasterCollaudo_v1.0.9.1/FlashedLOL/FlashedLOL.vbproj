@@ -1,0 +1,2643 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7373C749-DA11-49B0-98FB-F9573D393775}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>FlashedLOL.My.MyApplication</StartupObject>
+    <RootNamespace>FlashedLOL</RootNamespace>
+    <AssemblyName>FlashedLOL</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>FlashedLOL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>FlashedLOL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Text</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1412020197_66269.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DnsClient, Version=1.4.0.0, Culture=neutral, PublicKeyToken=4574bb5573c51424, processorArchitecture=MSIL">
+      <HintPath>..\packages\DnsClient.1.4.0\lib\net45\DnsClient.dll</HintPath>
+    </Reference>
+    <Reference Include="FTP, Version=1.0.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\FTP.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ADOX">
+      <HintPath>.\Interop.ADOX.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MongoDB.Bson, Version=2.13.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Bson.2.13.2\lib\net452\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=2.13.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.2.13.2\lib\net452\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.13.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.Core.2.13.2\lib\net452\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Libmongocrypt, Version=1.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Libmongocrypt.1.2.3\lib\netstandard2.0\MongoDB.Libmongocrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpCompress, Version=0.23.0.0, Culture=neutral, PublicKeyToken=afb0a02973931d96, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpCompress.0.23.0\lib\net45\SharpCompress.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Compression.Portable, Version=20.2200.0.45, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Compression.Net.Core.20.2.0.45\lib\netstandard2.0\Syncfusion.Compression.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing, Version=20.2460.0.45, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Licensing.20.2.0.45\lib\net46\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Pdf.Portable, Version=20.2200.0.45, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Pdf.Net.Core.20.2.0.45\lib\netstandard2.0\Syncfusion.Pdf.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Instrumentation" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encoding.CodePages.4.4.0\lib\net461\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CAN.vb" />
+    <Compile Include="CercaFile.Designer.vb">
+      <DependentUpon>CercaFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CercaFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Checksum.vb" />
+    <Compile Include="CollaudoETSDN\CanComunicaation\CanEtsdn.vb" />
+    <Compile Include="CollaudoETSDN\ErrorList\TestError.vb" />
+    <Compile Include="CollaudoETSDN\MongoDB\MongoDBdata.vb" />
+    <Compile Include="CollaudoETSDN\Structure\CreateCSVfile.vb" />
+    <Compile Include="CollaudoETSDN\Structure\PrototypTest.vb" />
+    <Compile Include="CollaudoETSDN\Structure\TestExecutor.vb" />
+    <Compile Include="CollaudoETSDN\TestResult\ManageGraphics\pBoxPower.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CollaudoETSDN\TestResult\ManageGraphics\Structure\TestResultView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CollaudoETSDN\Structure\TestResult.vb" />
+    <Compile Include="CollaudoETSDN\Structure\TestSuite.vb" />
+    <Compile Include="CollaudoETSDN\TestResult\TestResult5v.vb" />
+    <Compile Include="CollaudoETSDN\TestResult\TestResultAcc.vb" />
+    <Compile Include="CollaudoETSDN\TestResult\TestResultAnalog.vb" />
+    <Compile Include="CollaudoETSDN\TestResult\TestResultInputs.vb" />
+    <Compile Include="CollaudoETSDN\TestResult\TestResultRele.vb" />
+    <Compile Include="CollaudoETSDN\Tests\Test5VsEtsdn.vb" />
+    <Compile Include="CollaudoETSDN\Tests\TestAccEtsdn.vb" />
+    <Compile Include="CollaudoETSDN\Tests\TestAnalogEtsdn.vb" />
+    <Compile Include="CollaudoETSDN\Tests\TestInputsEtsdn.vb" />
+    <Compile Include="CollaudoETSDN\Tests\TestPower.vb" />
+    <Compile Include="CollaudoETSDN\Tests\TestReleEtsdn.vb" />
+    <Compile Include="CollaudoETSDN\CanComunicaation\VarRxFromETSDN.vb" />
+    <Compile Include="CollaudoETSDN\CanComunicaation\VarTxToETSDN.vb" />
+    <Compile Include="CollaudoETSDN\TestResult\TestResultPower.vb" />
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Form1.vb" />
+    <Compile Include="CollaudoETSDN\CollaudoETSDN.Designer.vb">
+      <DependentUpon>CollaudoETSDN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CollaudoETSDN\CollaudoETSDN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPeak.Designer.vb">
+      <DependentUpon>FrmPeak.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="FrmPeak.vb" />
+    <Compile Include="Gestione_device.vb" />
+    <Compile Include="GRSatBonatti.vb" />
+    <Compile Include="GRSatTestBonatti.vb" />
+    <Compile Include="CANOPEN.vb" />
+    <Compile Include="libs\PCANBasic.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MyListItem.vb" />
+    <Compile Include="Res.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Res.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UsbDevice.vb" />
+    <Compile Include="Cloud.vb" />
+    <Compile Include="CookieAwareWebClient.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Collaudo.Designer.vb">
+      <DependentUpon>Collaudo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Collaudo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ets.vb" />
+    <Compile Include="grcmdat.vb" />
+    <Compile Include="GRSatTest.vb" />
+    <Compile Include="GRSat.vb" />
+    <Compile Include="Interfaccia_dbTraduzioni.vb" />
+    <Compile Include="Library.vb" />
+    <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultipartForm.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Point3D.vb" />
+    <Compile Include="Prediction.vb" />
+    <Compile Include="WaitPanel.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CercaFile.resx">
+      <DependentUpon>CercaFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collaudo.resx">
+      <DependentUpon>Collaudo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Form1.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollaudoETSDN\CollaudoETSDN.resx">
+      <DependentUpon>CollaudoETSDN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPeak.resx">
+      <DependentUpon>FrmPeak.vb</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FrmPeak.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Res.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Res.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="backup.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\Anticollisione\boot.hex">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSA1 VE.CAR\Boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSA1 VE.CAR\ETS_DEFAULT.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSA1 VE.CAR\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSA1\Boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSA1\ETS_DEFAULT.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSA1\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSA1\mainchecksum.txt~">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSA1\XF01380D_NEW FULL TOUCH.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSA1\XF01380_NEW FULL.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSA1_KIWICALL\Boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSA1_KIWICALL\ETS_DEFAULT.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSA1_KIWICALL\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSA1_KIWICALL\mainchecksum.txt~">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSA1_KIWICALL\X001520_Carrello.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSA1_KIWICALL\X001530_PulsanteChiamata.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSB1\boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSB1\ETSB1_Conf_base.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSB1\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSB1\X001380D_NEW BASE TOUCH.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSB1\X001380T_BASE TASTIERA.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSB1\X001380_NEW BASE.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSB1_KiwiEye-Mini\boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSB1_KiwiEye-Mini\ETSB1_Conf_base.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSB1_KiwiEye-Mini\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSB1_KiwiEye-Mini\X0T_BASE TASTIERA.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSB1_KiwiEye-Mini\X0_BASE.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSDN\0-nessuna.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSDN\boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSDN\IN-invertiti.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSDN\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSDN\X400512.LD">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSDN_StandAlone\0-nessuna.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSDN_StandAlone\boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSDN_StandAlone\IN-invertiti.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSDN_StandAlone\laser-dentro-fuori-standalone-invertito.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSDN_StandAlone\laser-dentro-fuori-standalone.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSDN_StandAlone\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSDN_StandAlone\plc_3_input_RL1_fotocellule_etsdn.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSDN_StandAlone\radar-corsia-standalone-invertito.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSDN_StandAlone\radar-corsia-standalone-torretta-invertito.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSDN_StandAlone\radar-corsia-standalone-torretta.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSDN_StandAlone\radar-corsia-standalone.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSDN_StandAlone\X400512R.LD">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\ETSDN_StandAlone\X400512S.LD">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\KIWI-EYE\Modello A.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\KIWI-EYE\Modello B.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\KIWI-EYE\X100740.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\KiwiCall - Bootloader\boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\KiwiCall - Bootloader\DEFAULT.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\KiwiCall - Bootloader\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\KiwiCall - Carrello\boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\KiwiCall - Carrello\DEFAULT.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\KiwiCall - Carrello\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\KiwiCall - Pulsante\boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\KiwiCall - Pulsante\DEFAULT.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\KiwiCall - Pulsante\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\KiwiZonePlus\boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\KiwiZonePlus\Conf_base_08-07-2016.blpa">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\KiwiZonePlus\Conf_CARRELLO.blpa">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\KiwiZonePlus\Conf_DOOR_RESET.blpa">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\KiwiZonePlus\Conf_DOOR_SET.blpa">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\KiwiZonePlus\Conf_test_08-07-2016.blpa">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\KiwiZonePlus\Etichetta.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\KiwiZonePlus\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\KiwiZonePlus\Quadro.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\LMPCL\boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\LMPCL\Conf.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\LMPCL\LMPCL.LD">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\MDT_BARCODE\Boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\MDT_BARCODE\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\MDT_BARCODE\MDT-X19_SensoreCorrente.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\MDT_BARCODE\MDT_AntExtCablaggio_New.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\MDT_BARCODE\X100425.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\MDT_NEW\Boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\MDT_NEW\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\MDT_NEW\MDT-X19_SensoreCorrente.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\MDT_NEW\MDT_AntExtCablaggio_New.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\MIA\boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\MIA\Boot.bin.old">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\MIA\MIA.LD">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\Sensore_di_corrente\X200601.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\UWB_ancora\boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\UWB_ancora\etichetta.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\UWB_ancora\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\UWB_ancora\X001330_AntiCollisione.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\UWB_ancora\X101330_AntiAssembramento.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\UWB_stazione_carica\1_Slot.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\UWB_stazione_carica\5_Slot.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\UWB_Tag\T4S_T4F.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\UWB_Tag\X001340_Tag.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\UWB_Tag\X101340_Dista.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader\X000650_BottonBox\BottonBox.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\Alim_24V10W-X0012080\Etichetta.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\BluePass\boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\BluePass\Conf_base_08-07-2016.blpa">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\BluePass\Conf_CARRELLO.blpa">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\BluePass\Conf_DOOR_RESET.blpa">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\BluePass\Conf_DOOR_SET.blpa">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\BluePass\Conf_test_08-07-2016.blpa">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\BluePass\Etichetta.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\BluePass\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\BluePass\Quadro.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\BT1\Boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\BT1\BT1_base_30-05-2016.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\BT1\Main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\BT2\boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\BT2\BT2_base.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\BT2\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\Carrello_Ancora\1.2.0-carrello-ancora.hex">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\Carrello_Ancora\setup_Jlink_load_FW.jlink">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\Carrello_Tag\1.2.0-carrello-tag.hex">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\Carrello_Tag\setup_Jlink_load_FW.jlink">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\Controllo_Sequenza_CSSC_X000071\Etichetta.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\Convertitore_RS232_TTL\BASE_X000930_RS232-TTL.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\Convertitore_RS232_TTL\X100930.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\Convertitore_USB-Seriale\X000910_BASE.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\Dai&amp;Vai_X000920\BASE.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\Dista-Safe\dista-safe-sd-bt-app_v3.3.0.hex">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\Dista-Safe\setup_Jlink_load_FW.jlink">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\E000501_IMS_Pot_LINDE\BASE.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\E00098x-con_IRF3808\E000980.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\E00098x-con_IRF3808\E000981.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\E10098x\E100980.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\E10098x\E100981.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\EPS\Etichetta.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\EPS\Ripristino utenti.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\EPS\Utenti collaudo.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\Boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\ETS_DEFAULT.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\ETS_DEFAULT_Anticollision.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\ETS_DOOSAN_07-02-2020.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\ETS_Lettore 12-24V.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\ETS_Lettore 5V.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\Lampocar_LECU.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\mainchecksum.txt~">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\uwb_restore_default.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\uwb_test.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\X1T_SD TASTIERA.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\X1_SD.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\X5D_GPRS TOUCH.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\X5_GPRS.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\X7D_GPS GPRS TOUCH.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\X7T_GPS GPRS TASTIERA.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\X7_GPS GPRS.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\X9_SD WIFI.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\XDT_GPRS+WIFI_con_TASTIERA.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\XD_GPRS+WIFI.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\XF-SE_FULL.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\XF01380D_NEW FULL TOUCH.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\XF01380_NEW FULL.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\XFT_FULL+Tastiera.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\XF_FULL TOUCH.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1\XF_FULL.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Fiorentini\Boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Fiorentini\ETS_Fiorentini_K5_18-1-2017.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Fiorentini\ETS_Fiorentini_K7_05-06-2017.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Fiorentini\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Fiorentini\Rete Wi-Fi GR.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Fiorentini\X1T_SD TASTIERA.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Fiorentini\X1_SD.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Fiorentini\X5_GPRS.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Fiorentini\X7D_GPS GPRS TOUCH.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Fiorentini\X7T_GPS GPRS TASTIERA.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Fiorentini\X7_GPS GPRS.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Fiorentini\X9_SD WIFI.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Fiorentini\XDT_GPRS+WIFI_con_TASTIERA.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Fiorentini\XD_GPRS+WIFI.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Fiorentini\XF-SE_FULL.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Fiorentini\XFT_FULL+Tastiera.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Fiorentini\XF_FULL TOUCH.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Fiorentini\XF_FULL.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Lampocar_LECU\Boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Lampocar_LECU\Lampocar_LECU.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Lampocar_LECU\Main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Lampocar_LECU\X1T_SD TASTIERA.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Lampocar_LECU\X1_SD.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Lampocar_LECU\X5D_GPRS TOUCH.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Lampocar_LECU\X5_GPRS.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Lampocar_LECU\X7D_GPS GPRS TOUCH.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Lampocar_LECU\X7T_GPS GPRS TASTIERA.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Lampocar_LECU\X7_GPS GPRS.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Lampocar_LECU\X9_SD WIFI.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Lampocar_LECU\XDT_GPRS+WIFI_con_TASTIERA.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Lampocar_LECU\XD_GPRS+WIFI.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Lampocar_LECU\XF-SE_FULL.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Lampocar_LECU\XFT_FULL+Tastiera.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Lampocar_LECU\XF_FULL TOUCH.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_Lampocar_LECU\XF_FULL.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_new_shield\Boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_new_shield\ETS_DEFAULT.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_new_shield\ETS_DEFAULT_Anticollision.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_new_shield\ETS_DOOSAN_07-02-2020.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_new_shield\ETS_Lettore 12-24V.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_new_shield\ETS_Lettore 5V.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_new_shield\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_new_shield\uwb_restore_default.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_new_shield\uwb_test.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_new_shield\X1T_SD TASTIERA.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_new_shield\X1_SD.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_new_shield\X5D_GPRS TOUCH.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_new_shield\X5_GPRS.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_new_shield\X7D_GPS GPRS TOUCH.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_new_shield\X7T_GPS GPRS TASTIERA.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_new_shield\X7_GPS GPRS.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_new_shield\X9_SD WIFI.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_new_shield\XDT_GPRS+WIFI_con_TASTIERA.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_new_shield\XD_GPRS+WIFI.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_new_shield\XF-SE_FULL.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_new_shield\XF01380D_NEW FULL TOUCH.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_new_shield\XF01380_NEW FULL.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_new_shield\XFT_FULL+Tastiera.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_new_shield\XF_FULL TOUCH.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_new_shield\XF_FULL.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_OLD\Boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_OLD\ETS_DEFAULT.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_OLD\ETS_DEFAULT_Anticollision.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_OLD\ETS_DOOSAN_07-02-2020.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_OLD\ETS_Lettore 12-24V.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_OLD\ETS_Lettore 5V.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_OLD\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_OLD\uwb_restore_default.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_OLD\uwb_test.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_OLD\X1T_SD TASTIERA.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_OLD\X1_SD.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_OLD\X5D_GPRS TOUCH.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_OLD\X5_GPRS.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_OLD\X7D_GPS GPRS TOUCH.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_OLD\X7T_GPS GPRS TASTIERA.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_OLD\X7_GPS GPRS.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_OLD\X9_SD WIFI.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_OLD\XDT_GPRS+WIFI_con_TASTIERA.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_OLD\XD_GPRS+WIFI.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_OLD\XF-SE_FULL.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_OLD\XF01380D_NEW FULL TOUCH.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_OLD\XF01380_NEW FULL.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_OLD\XFT_FULL+Tastiera.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_OLD\XF_FULL TOUCH.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSA1_OLD\XF_FULL.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSB1\boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSB1\ETSB1_Conf_base.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSB1\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSB1\X0_BASE TASTIERA.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSB1\X0_BASE.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSB1\X8_BASE-WIFI.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN\0-nessuna.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN\boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN\ETSDN.LD">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN\IN-invertiti.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN\laser-dentro-fuori-standalone-invertito.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN\laser-dentro-fuori-standalone.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN\radar-corsia-standalone-invertito.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN\radar-corsia-standalone-torretta-invertito.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN\radar-corsia-standalone-torretta.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN\radar-corsia-standalone.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN\X000511S.LD">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN\X400511S.LD">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN\X400511_Antic.LD">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN\X400512R.LD">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN\X400512S.LD">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN\X400512_AnticModificato.LD">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN_StandAlone\0-nessuna.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN_StandAlone\boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN_StandAlone\ETSDN.LD">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN_StandAlone\IN-invertiti.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN_StandAlone\laser-dentro-fuori-standalone-invertito.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN_StandAlone\laser-dentro-fuori-standalone.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN_StandAlone\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN_StandAlone\plc_3_input_RL1_fotocellule_etsdn.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN_StandAlone\radar-corsia-standalone-invertito.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN_StandAlone\radar-corsia-standalone-torretta-invertito.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN_StandAlone\radar-corsia-standalone-torretta.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN_StandAlone\radar-corsia-standalone.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSDN_StandAlone\X400512S.LD">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSL_old\Boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSL_old\Conf.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSL_old\Etichetta.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETSL_old\Main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\ETS_DEFAULT.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\ETS_DEFAULT_Anticollision.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\ETS_DOOSAN_07-02-2020.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\ETS_Lettore 12-24V.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\ETS_Lettore 5V.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\Lampocar_LECU.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\Main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\uwb_restore_default.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\uwb_test.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\X1T_SD TASTIERA.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\X1_SD.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\X5D_GPRS TOUCH.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\X5_GPRS.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\X7D_GPS GPRS TOUCH.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\X7T_GPS GPRS TASTIERA.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\X7_GPS GPRS.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\X9_SD WIFI.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\XDT_GPRS+WIFI_con_TASTIERA.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\XD_GPRS+WIFI.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\XF-SE_FULL.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\XF01380D_NEW FULL TOUCH.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\XF01380_NEW FULL.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\XFT_FULL+Tastiera.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\XF_FULL TOUCH.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Bonatti\XF_FULL.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_HMI\12-24V.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_HMI\boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_HMI\can_initr.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_HMI\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Lettore_badge\boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Lettore_badge\ETS_Lettore 12-24V.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Lettore_badge\ETS_Lettore 5V.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\ETS_Lettore_badge\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\K001480-Interfaccia_CAN-ETS\etichetta.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\KIWI-EYE\Modello A.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\KIWI-EYE\Modello B.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\KIWI-EYE\X100740.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\Lampocar_PC_BOX\PC_BOX.LD">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\LMPCL\boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\LMPCL\Conf.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\LMPCL\LMPCL.LD">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\LMPC\Boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\LMPC\Conf.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\LMPC\LMPC.LD">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MDCL\Boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MDCL\Main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MDCL\MDCL.LD">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MDCL\new_gain.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MDC\Boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MDC\Conf.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MDC\Conf2.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MDC\Main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MDC\MDC.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MDT\Boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MDT\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MDT\MDT BASE.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MDT\MDT TEST.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MDT\MDT-X19_SensoreCorrente_OK.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MDT\MDT_AntExtCablaggio.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MDT\MDT_AntIntCablaggio.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MDT\Mdt_conf_217A.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MDT\MDT_Lettore.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MDT_NEW\Boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MDT_NEW\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MDT_NEW\MDT-X19_SensoreCorrente_OK.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MDT_NEW\MDT_AntExtCablaggio_New.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MDT_NEW\Mdt_conf_217A.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MEA\Boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MEA\Conf_base.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MEA\etichetta.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MEA\Main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MIA\boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MIA\Boot.bin.old">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\MIA\MIA.LD">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\Sensore_di_corrente\BASE.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\Sensore_di_corrente\X200600.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\Sensore_di_corrente\X200601.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\Stoccatore_ABB\base.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\Tag\1.1.0-pedone.hex">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\Tag\setup_Jlink_load_FW.jlink">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\Tastiera_BT\BASE.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\UWB_ancora\boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\UWB_ancora\etichetta.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\UWB_ancora\main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\UWB_ancora\X001330_AntiCollisione.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\UWB_ancora\X101330_AntiAssembramento.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\UWB_stazione_carica\1_Slot.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\UWB_stazione_carica\2_Slot.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\UWB_stazione_carica\5_Slot.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\UWB_Tag\T4S_T4F.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\UWB_Tag\X001340.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\UWB_Tag\X101340.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\UZ-UZM_241\UZM_X200241.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\UZ-UZM_241\UZ_X100241.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\WYC\Boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\WYC\Conf.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\WYC\Main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\WYC\WYC 12-24V.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\X000270_Key_BT_Toyota_Linde\Key _BT_Toyota_Linde.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\X000630_Logica-Interfaccia-Still-Digitale\BASE.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\X000650_BottonBox\BottonBox.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\X000650_BottonBox\Panicstation - Bonatti.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\X000840_Lett125KHz\Lettore_125KHz.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\X000850_R60S20\BASE.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\X000871_R20S20\BASE.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\X001260_Ripetitore_canbus_isolato\Ripetitore_canbus_isolato.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\X19\Boot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\X19\C000900_FUSE_BOX.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\X19\EXT.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\X19\EXT_C.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\X19\INT.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\X19\INT_C.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\X19\JSP_RS232.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\X19\Main.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\X19\NonSoloCarrelli+Lettore.mdt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\X19\OMG_X19_ETSDN_iSens_elettrolita.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\X19\X19 base.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\X19\X19 Cesena service con lettore.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\X19\X19 Comuni.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\X19\X19 Ruini.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\X19\X19 sensore corrente.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\X19\X19 TEST.cnf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Bootloader_old\X400010_REB_con_cicalino_Ext\REB_Cicalino_Esterno.ld">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="collaudo-setup.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="jlink\Carrello_Ancora\1.2.0-carrello-ancora.hex" />
+    <None Include="jlink\Carrello_Ancora\setupANDfwancoraCarrello.jlink" />
+    <None Include="jlink\Carrello_Tag\1.2.0-carrello-tag.hex" />
+    <None Include="jlink\Carrello_Tag\setup_Jlink_load_FW.jlink" />
+    <None Include="jlink\Tag\1.1.0-pedone.hex" />
+    <None Include="jlink\Tag\setup_Jlink_load_FW.jlink" />
+    <None Include="libmongocrypt.dylib" />
+    <None Include="libmongocrypt.so" />
+    <None Include="memCOM1.etsbak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="utenza.ets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\1411749909_cloud_cloud-download-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1411754115_519978-042_ArrowsTogether-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1411754145_save_as.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1411754109_519672-178_Download-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1411993756_Stop sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1412020197_66269.ico" />
+    <Content Include="androcon.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="boh.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\Anticollisione\load_bootloader_jlink_script.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSA1 VE.CAR\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSA1 VE.CAR\cloudcfg.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSA1 VE.CAR\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSA1 VE.CAR\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSA1 VE.CAR\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSA1 VE.CAR\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSA1\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSA1\cloudcfg.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSA1\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSA1\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSA1\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSA1\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSA1_KIWICALL\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSA1_KIWICALL\cloudcfg.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSA1_KIWICALL\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSA1_KIWICALL\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSA1_KIWICALL\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSA1_KIWICALL\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSB1\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSB1\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSB1\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSB1\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSB1\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSB1_KiwiEye-Mini\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSB1_KiwiEye-Mini\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSB1_KiwiEye-Mini\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSB1_KiwiEye-Mini\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSB1_KiwiEye-Mini\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSDN\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSDN\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSDN\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSDN\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSDN\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSDN_StandAlone\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSDN_StandAlone\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSDN_StandAlone\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSDN_StandAlone\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\ETSDN_StandAlone\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\KIWI-EYE\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\KiwiCall - Bootloader\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\KiwiCall - Bootloader\load_bootloader_jlink_script.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\KiwiCall - Bootloader\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\KiwiCall - Bootloader\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\KiwiCall - Carrello\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\KiwiCall - Carrello\load_bootloader_jlink_script.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\KiwiCall - Carrello\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\KiwiCall - Carrello\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\KiwiCall - Pulsante\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\KiwiCall - Pulsante\load_bootloader_jlink_script.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\KiwiCall - Pulsante\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\KiwiCall - Pulsante\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\KiwiZonePlus\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\KiwiZonePlus\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\KiwiZonePlus\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\KiwiZonePlus\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\KiwiZonePlus\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\LMPCL\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\LMPCL\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\LMPCL\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\LMPCL\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\MDT_BARCODE\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\MDT_BARCODE\cloudcfg.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\MDT_BARCODE\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\MDT_BARCODE\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\MDT_BARCODE\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\MDT_BARCODE\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\MDT_NEW\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\MDT_NEW\cloudcfg.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\MDT_NEW\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\MDT_NEW\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\MDT_NEW\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\MDT_NEW\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\MIA\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\MIA\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\MIA\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\MIA\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\Sensore_di_corrente\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\Sensore_di_corrente\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\timestamp.txt" />
+    <Content Include="Bootloader\UWB_ancora\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\UWB_ancora\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\UWB_ancora\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\UWB_ancora\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\UWB_ancora\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\UWB_ancora\uwb_restore_default.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\UWB_ancora\uwb_test.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\UWB_stazione_carica\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\UWB_stazione_carica\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\UWB_Tag\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\UWB_Tag\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\X000650_BottonBox\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader\X000650_BottonBox\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\Alim_24V10W-X0012080\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\Alim_24V10W-X0012080\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\BluePass\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\BluePass\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\BluePass\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\BluePass\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\BluePass\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\BT1\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\BT1\BT1_Standard_mail_30-05-2016.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\BT1\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\BT1\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\BT1\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\BT1\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\BT2\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\BT2\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\BT2\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\BT2\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\BT2\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\Carrello_Ancora\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\Carrello_Tag\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\Controllo_Sequenza_CSSC_X000071\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\Controllo_Sequenza_CSSC_X000071\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\Convertitore_RS232_TTL\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\Convertitore_RS232_TTL\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\Convertitore_USB-Seriale\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\Convertitore_USB-Seriale\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\Dai&amp;Vai_X000920\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\Dai&amp;Vai_X000920\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\Dista-Safe\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\E000501_IMS_Pot_LINDE\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\E000501_IMS_Pot_LINDE\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\E00098x-con_IRF3808\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\E00098x-con_IRF3808\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\E10098x\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\E10098x\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\EPS\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\EPS\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\EPS\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1\cloudcfg.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1_Fiorentini\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1_Fiorentini\cloudcfg.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1_Fiorentini\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1_Fiorentini\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1_Fiorentini\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1_Fiorentini\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1_Lampocar_LECU\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1_Lampocar_LECU\cloudcfg.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1_Lampocar_LECU\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1_Lampocar_LECU\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1_Lampocar_LECU\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1_Lampocar_LECU\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1_new_shield\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1_new_shield\cloudcfg.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1_new_shield\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1_new_shield\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1_new_shield\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1_new_shield\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1_OLD\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1_OLD\cloudcfg.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1_OLD\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1_OLD\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1_OLD\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSA1_OLD\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSB1\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSB1\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSB1\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSB1\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSB1\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSDN\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSDN\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSDN\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSDN\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSDN\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSDN_StandAlone\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSDN_StandAlone\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSDN_StandAlone\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSDN_StandAlone\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSDN_StandAlone\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSL_old\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSL_old\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSL_old\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETSL_old\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETS_Bonatti\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETS_Bonatti\cloudcfg.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETS_Bonatti\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETS_Bonatti\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETS_Bonatti\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETS_Bonatti\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETS_HMI\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETS_HMI\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETS_HMI\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETS_HMI\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETS_HMI\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETS_Lettore_badge\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETS_Lettore_badge\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETS_Lettore_badge\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETS_Lettore_badge\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\ETS_Lettore_badge\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\K001480-Interfaccia_CAN-ETS\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\K001480-Interfaccia_CAN-ETS\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\KIWI-EYE\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\Lampocar_PC_BOX\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\Lampocar_PC_BOX\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\LMPCL\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\LMPCL\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\LMPCL\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\LMPCL\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\LMPC\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\LMPC\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\LMPC\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MDCL\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MDCL\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MDCL\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MDCL\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MDCL\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MDC\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MDC\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MDC\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MDC\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MDC\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MDT\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MDT\cloudcfg.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MDT\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MDT\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MDT\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MDT\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MDT_NEW\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MDT_NEW\cloudcfg.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MDT_NEW\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MDT_NEW\Etichette_produzione_13-11-2020_09-56.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MDT_NEW\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MDT_NEW\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MDT_NEW\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MEA\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MEA\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MEA\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MEA\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MEA\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MIA\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MIA\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MIA\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\MIA\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\Sensore_di_corrente\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\Sensore_di_corrente\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\Stoccatore_ABB\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\Stoccatore_ABB\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\Tag\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\Tastiera_BT\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\Tastiera_BT\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\UWB_ancora\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\UWB_ancora\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\UWB_ancora\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\UWB_ancora\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\UWB_ancora\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\UWB_ancora\uwb_restore_default.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\UWB_ancora\uwb_test.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\UWB_stazione_carica\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\UWB_stazione_carica\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\UWB_Tag\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\UWB_Tag\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\UZ-UZM_241\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\UZ-UZM_241\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\WYC\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\WYC\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\WYC\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\WYC\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\WYC\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\X000270_Key_BT_Toyota_Linde\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\X000270_Key_BT_Toyota_Linde\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\X000630_Logica-Interfaccia-Still-Digitale\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\X000630_Logica-Interfaccia-Still-Digitale\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\X000650_BottonBox\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\X000650_BottonBox\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\X000840_Lett125KHz\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\X000840_Lett125KHz\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\X000850_R60S20\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\X000850_R60S20\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\X000871_R20S20\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\X000871_R20S20\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\X001260_Ripetitore_canbus_isolato\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\X001260_Ripetitore_canbus_isolato\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\X19\bootchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\X19\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\X19\mainchecksum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\X19\spconf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\X19\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\X400010_REB_con_cicalino_Ext\Configurazione.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bootloader_old\X400010_REB_con_cicalino_Ext\timestamp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Core\Compression\Snappy\lib\win\snappy32.dll" />
+    <Content Include="Core\Compression\Snappy\lib\win\snappy64.dll" />
+    <Content Include="Core\Compression\Zstandard\lib\win\libzstd.dll" />
+    <Content Include="CP210xManufacturing.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FTP.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FTP_conf.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="grsats.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="hostandrocon.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="inpout32.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="inpoutx64.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Interop.ADOX.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="jlink\Carrello_Ancora\Configurazione.txt" />
+    <Content Include="jlink\Carrello_Tag\Configurazione.txt" />
+    <Content Include="jlink\Tag\Configurazione.txt" />
+    <Content Include="m2m.grsat.netandrocon.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mongocrypt.dll" />
+    <Content Include="Newtonsoft.Json.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\CorrectSenzaSfondo.png" />
+    <None Include="Resources\ButtonStart.png" />
+    <None Include="Resources\ButtonStop1.png" />
+    <None Include="Resources\Correct.png" />
+    <None Include="Resources\ETSDN_statico.png" />
+    <None Include="Resources\Etsdn_Gif.gif.gif" />
+    <None Include="Resources\error_FILL.png" />
+    <None Include="Resources\BtnStart.png" />
+    <None Include="Resources\cornice.png" />
+    <None Include="Resources\btnHide.png" />
+    <None Include="Resources\btnShow.png" />
+    <None Include="Resources\btnStop.png" />
+    <None Include="Resources\ButtonOff.png" />
+    <Content Include="Resources\green-check-mark-symbol-button-line-circle-grass-angle-logo-png-clip-art.png" />
+    <None Include="Resources\image.jpg" />
+    <None Include="Resources\Hide_Show.png" />
+    <Content Include="Resources\img_510419.png" />
+    <None Include="Resources\Info1.png" />
+    <None Include="Resources\Info.png" />
+    <Content Include="Resources\Load.gif" />
+    <Content Include="Resources\loading-bar.gif" />
+    <Content Include="Resources\Loading.gif" />
+    <Content Include="Resources\Mistake.png" />
+    <Content Include="Resources\modern-start-button_23-2147909813.jpg" />
+    <Content Include="Resources\OIP.jfif" />
+    <None Include="Resources\output-onlinegiftools.gif" />
+    <None Include="Resources\pannelloPower.png" />
+    <None Include="Resources\panelRele.png" />
+    <None Include="Resources\panelInputs.png" />
+    <None Include="Resources\panelAnalog.png" />
+    <None Include="Resources\panel5V.png" />
+    <None Include="Resources\panelAcc.png" />
+    <None Include="Resources\panelAccLungodrawio.png" />
+    <None Include="Resources\panelSerial.png" />
+    <None Include="Resources\panelRichText.png" />
+    <Content Include="Resources\PINCODE.jpg" />
+    <Content Include="Resources\png-clipart-green-and-white-correct-sign-grass-angle-symbol-yellow-accept-angle-grass.png" />
+    <None Include="Resources\PulsanteAvvio.png" />
+    <Content Include="Resources\R.gif" />
+    <Content Include="Resources\SDbtn90.jpg" />
+    <Content Include="Resources\sd_errore.PNG" />
+    <Content Include="Resources\SD_ok.jpg" />
+    <Content Include="Resources\sd_warning.PNG" />
+    <None Include="Resources\USB.png" />
+    <None Include="Resources\USBscollegato.png" />
+    <Content Include="SIM\COOP\set.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SIM\TM\set.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SIM\WIND\set.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tmpSerial.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www.m2m.grsat.netandrocon.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\sd.PNG" />
+    <None Include="Resources\SD_Errore.jpg" />
+    <None Include="Resources\SD_warn.jpg" />
+    <None Include="Resources\GPS_FIX.PNG" />
+    <None Include="Resources\GPS_OFF.PNG" />
+    <None Include="Resources\gps_power.PNG" />
+    <None Include="Resources\noSim.PNG" />
+    <None Include="Resources\signal5.PNG" />
+    <None Include="Resources\signal4.PNG" />
+    <None Include="Resources\signal3.PNG" />
+    <None Include="Resources\signal2.PNG" />
+    <None Include="Resources\segnale_1.jpg" />
+    <None Include="Resources\segnale_0.jpg" />
+    <None Include="Resources\gprsOK.PNG" />
+    <None Include="Resources\GPRS_OK_BUSY.PNG" />
+    <None Include="Resources\gsm_ok.PNG" />
+    <None Include="Resources\gsm_error.PNG" />
+    <None Include="Resources\gsm_ok_busy.PNG" />
+    <None Include="Resources\wifi_connesso.PNG" />
+    <None Include="Resources\wifiNoConn.PNG" />
+    <None Include="Resources\wifi_errore.PNG" />
+    <None Include="Resources\batCarge.PNG" />
+    <None Include="Resources\batno.PNG" />
+    <None Include="Resources\Esclamativo.PNG" />
+    <None Include="Resources\ets-piatto.jpg" />
+    <None Include="Resources\ets-lato-lungo.jpg" />
+    <None Include="Resources\ets-lato-corto.jpg" />
+    <None Include="Resources\7e540581135fb11bf49681164fbc7927.jpg" />
+    <None Include="Resources\reload.png" />
+    <None Include="Resources\316721.png" />
+    <None Include="Resources\31672.png" />
+    <None Include="Resources\pallina_grigia.png" />
+    <None Include="Resources\pallina_verde.png" />
+    <None Include="Resources\pallina_rossa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FlahedLOLUpdater\FlahedLOLUpdater.csproj">
+      <Project>{19dd92a8-4c0a-4003-96b7-237de14dc3b3}</Project>
+      <Name>FlahedLOLUpdater</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Questo progetto fa riferimento a uno o più pacchetti NuGet che non sono presenti in questo computer. Usare lo strumento di ripristino dei pacchetti NuGet per scaricarli. Per altre informazioni, vedere http://go.microsoft.com/fwlink/?LinkID=322105. Il file mancante è {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+    <Error Condition="!Exists('..\packages\MongoDB.Driver.Core.2.13.2\build\MongoDB.Driver.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MongoDB.Driver.Core.2.13.2\build\MongoDB.Driver.Core.targets'))" />
+    <Error Condition="!Exists('..\packages\MongoDB.Libmongocrypt.1.2.3\build\MongoDB.Libmongocrypt.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MongoDB.Libmongocrypt.1.2.3\build\MongoDB.Libmongocrypt.targets'))" />
+    <Error Condition="!Exists('..\packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets'))" />
+  </Target>
+  <Import Project="..\packages\MongoDB.Driver.Core.2.13.2\build\MongoDB.Driver.Core.targets" Condition="Exists('..\packages\MongoDB.Driver.Core.2.13.2\build\MongoDB.Driver.Core.targets')" />
+  <Import Project="..\packages\MongoDB.Libmongocrypt.1.2.3\build\MongoDB.Libmongocrypt.targets" Condition="Exists('..\packages\MongoDB.Libmongocrypt.1.2.3\build\MongoDB.Libmongocrypt.targets')" />
+  <Import Project="..\packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

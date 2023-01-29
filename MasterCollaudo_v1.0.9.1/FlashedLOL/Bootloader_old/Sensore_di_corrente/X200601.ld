@@ -1,0 +1,1 @@
+﻿X200601~I Sensor~Sensore di corrente 1200A New box~5~20~2013

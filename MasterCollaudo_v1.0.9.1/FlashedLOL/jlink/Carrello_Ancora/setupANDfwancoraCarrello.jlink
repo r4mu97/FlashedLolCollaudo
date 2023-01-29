@@ -1,0 +1,5 @@
+device NRF52832_XXAA
+si 1
+speed 4000
+erase
+loadfile C:\Users\giamp\Desktop\fw-da-usare\1.2.0-carrello-ancora.hex

@@ -1,0 +1,1 @@
+﻿XF00521SE~ETS®UP~ETS SD GPRS GPS WiFi scatola stagna e antenne esterne~5~500~2013

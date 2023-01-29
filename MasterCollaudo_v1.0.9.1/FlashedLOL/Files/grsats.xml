@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<dati>
+	<dato D0="0" D1="http://grsat.webgr.it/" D2="venus" D3="letizia19" D4="GRSAT" D5="ftp.webgr.it" D6="ftpuser" D7="FtpUser123" D8="www.grsat.webgr.it"/>
+	<dato D0="1" D1="http://m2m.grsat.net/" D2="" D3="" D4="M2M" D5="ftp.grsat.it" D6="ftpm2m@grsat.net" D7="FtpUser123" D8="www.m2m.grsat.net"/>
+	<dato D0="2" D1="http://cgm.kiwisat.it/" D2="admin" D3="!CgmMaster567?!" D4="CGM" D5="ftp.cgm.kiwisat.it" D6="ets@cgm.kiwisat.it" D7="1x3eRuPeNHab" D8="www.cgm.kiwisat.it"/>
+	<dato D0="3" D1="http://grsat.nscsrl.com/" D2="admin" D3="!NSCMaster2016?" D4="NSC" D5="grsat.nscsrl.com" D6="ftpuser" D7="FtpUser123" D8="www.grsat.nscsrl.com"/>
+	<dato D0="0" D1="http://dev.grsat.net/" D2="" D3="" D4="DEV.GRSAT" D5="" D6="ftpuser" D7="FtpUser123" D8=""/>
+	<dato D0="3" D1="http://195.62.169.156/" D2="admin" D3="Admin!!123$$" D4="San Benedetto VS" D5="195.62.169.156" D6="ftpuser" D7="ftpuser2012" D8="195.62.169.156"/>
+	<dato D0="3" D1="http://195.62.168.212/" D2="admin" D3="GaggioM2012" D4="Gaggio Montano" D5="195.62.168.212" D6="ftpusergm" D7="ftpuser" D8="195.62.168.212"/>
+	<dato D0="3" D1="http://portal.ruinimarco.it/" D2="grmaster" D3="!Ruini123?" D4="Ruini" D5="portal.ruinimarco.it" D6="pb@portal.ruinimarco.it" D7="FYLGBjUG1HIq7lU" D8="www.portal.ruinimarco.it"/>
+	<dato D0="3" D1="http://grsat.trecar.it/" D2="admin" D3="!TrecarMaster123?" D4="Trecar" D5="88.149.134.99" D6="ftproot" D7="20141212grsaT" D8="88.149.134.99"/>
+	<dato D0="3" D1="http://carservice.webgr.it/" D2="admin" D3="!Admin12345?" D4="CarService" D5="ftp.webgr.it" D6="ftpusercs@webgr.it" D7="FtpUser123" D8="www.carservice.webgr.it"/>
+	<dato D0="3" D1="http://fiorinicarrelli.webgr.it/" D2="Admin" D3="!Master12345?" D4="Fiorini Carrelli" D5="fiorinicarrelli.webgr.it" D6="fiorftpuser@webgr.it" D7="FtpUser123" D8="www.fiorinicarrelli.webgr.it"/>
+	<dato D0="3" D1="http://91.134.114.246/" D2="admin" D3="!FiorMaster345?" D4="Fiorentini" D5="91.134.114.246" D6="grdata" D7="37lfl124sD" D8="91.134.114.246"/>
+	<dato D0="0" D1="http://raniero.webgr.it/" D2="Raniero" D3="danymarco" D4="Raniero" D5="raniero.kiwitron.tech" D6="ftpraniero@webgr.it" D7="FtpUser123" D8="raniero.kiwitron.tech"/>
+	<dato D0="0" D1="http://portalelogintorino.com/" D2="admin" D3="FYjFbW9B" D4="LogIn" D5="ftp.portalelogintorino.com" D6="f@portalelogintorino.com" D7="FtpUser123" D8="portalelogintorino.com"/>
+	<dato D0="0" D1="http://vfm.vecargroup.it/" D2="gierre" D3="!Ad2019gr?" D4="Vecar" D5="vfm.vecargroup.it" D6="ftpuser" D7="FtpUser123" D8="vfm.vecargroup.it"/>
+	<dato D0="0" D1="http://doosan.kiwisat.io/" D2="admin" D3=":@:4bVvUBxiQdAe_E2}pxJ!*" D4="Doosan" D5="ftp.doosan.kiwisat.it" D6="ftp-doosan" D7="q2%nD0Uc;nmv" D8="doosan.kiwisat.io"/>
+	<dato D0="0" D1="http://movimacvaldarno.webgr.it/" D2="admin" D3="+dW&amp;wLjj" D4="MovimacValdarno" D5="ftp.movimavaldarno.webgr.it" D6="ftpusermovimacva" D7="FtpUser123" D8="movimacvaldarno.webgr.it"/>
+	<dato D0="0" D1="http://degrocar.kiwisat.it/" D2="admin" D3="m6ZfKpbfxmnMHGHyauSQkKSaVf4GBWoBoCkSuAOkU6R7egbXBrQGRzWZq7Orshpx" D4="Degrocar" D5="ftp.degrocar.kiwisat.it" D6="ets" D7="zMaxkNZSoWyEX8j" D8="degrocar.kiwisat.it"/>
+	<dato D0="0" D1="http://still.kiwisat.it/" D2="admin" D3="6znO3&amp;TRwr4EG0iT3C?8Vv)7STAmhANQ" D4="Still" D5="ftp.still.kiwisat.it" D6="ets@still.kiwisat.it" D7="Cz&amp;Tui_JQCuK" D8="still.kiwisat.it"/>
+	<dato D0="0" D1="http://my.kiwitron.tech/" D2="admin" D3="QiU#U=^CB9DsJ*Z}1xYZMdawm7Q^xqQb" D4="my.kiwitron.tech" D5="my.kiwitron.tech" D6="ets" D7="tcSpfT6NIxYTIjk" D8="my.kiwitron.tech"/>
+	<dato D0="0" D1="http://park.kiwitron.tech/" D2="admin" D3="UWNCz*z-jJ9sC6g" D4="park.kiwitron.tech" D5="park.kiwitron.tech" D6="ets" D7="WOPXQw)99E7c" D8="park.kiwitron.tech"/>
+	<dato D0="0" D1="http://peccioli.kiwitron.tech/" D2="admin" D3="xU6CfrTGfboTHBacIImP5ZfwP7yl66zr7ChNKz70IWV1kJnXE2zBjVVcACkbJMRi" D4="peccioli.kiwitron.tech" D5="peccioli.kiwitron.tech" D6="ets" D7="bNCJbXcWUk7MvXO" D8="peccioli.kiwitron.tech"/>
+	<dato D0="0" D1="http://rr.webgr.it" D2="admin" D3="N38RWhLPhVttrTe6" D4="rr.webgr.it" D5="ftp.webgr.it" D6="ricambi" D7="FtpUser123" D8="rr.webgr.it"/>
+</dati>

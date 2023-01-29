@@ -1,0 +1,1 @@
+﻿X000421EC~MDT~Antenna Ext Cablaggio~8-48~150~2017

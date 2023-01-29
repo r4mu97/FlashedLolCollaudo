@@ -1,0 +1,1 @@
+﻿X100241~Serial Converter UZ~~5~500~2014

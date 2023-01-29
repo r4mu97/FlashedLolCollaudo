@@ -1,0 +1,1 @@
+﻿X000101~EPS®~Electronic Pincode Switch~10-120~10~2017

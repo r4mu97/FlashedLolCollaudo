@@ -1,0 +1,11 @@
+// host HTTP
+$W0B 0
+
+// host FTP
+$W0B 8
+
+// host User
+$W0B 12
+
+// host pasw
+$W0B 13
