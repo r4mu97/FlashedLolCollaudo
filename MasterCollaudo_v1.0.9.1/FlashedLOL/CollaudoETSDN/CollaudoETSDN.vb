@@ -60,7 +60,7 @@ Public Class MainEtsdn
         Do
             canEtsdnVar.InitCanOpen()
         Loop While Not canEtsdnVar.is_Inizialized()
-
+        canEtsdnVar.data_to_send = 1
         Dim thread_heartbeat = New Thread(AddressOf canEtsdnVar.heartbeat)
         thread_heartbeat.Start()
 
