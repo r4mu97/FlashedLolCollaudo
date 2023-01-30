@@ -10,7 +10,7 @@ Public Class MainEtsdn
 
     Private thread As Thread
     Private AnimatedImage As Image
-    Dim canEtsdnVar As New CanEtsdn
+    Dim canEtsdnVar As New CanCommunication
     Dim varTxEtsdn As New VarTxToETSDN
     Dim resultTest As New ResultTestDoneETSDN
     Dim statoCollaudo As New StatoTestCollaudo

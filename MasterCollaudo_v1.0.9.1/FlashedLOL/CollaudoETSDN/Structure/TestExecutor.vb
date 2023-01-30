@@ -3,7 +3,7 @@
 Public Class TestExecutor
 
     Dim varTxEtsdn As New VarTxToETSDN
-    Dim canEtsdnVar As New CanEtsdn
+    Dim canEtsdnVar As New CanCommunication
     Public Function Execute_test_suite(suite As TestSuite, gui As MainEtsdn)
         Dim nTestDone As Integer = 0
         'creo la lista dei risultati ogni volta che chiamo la fuznione(ogni volta che lancio il collaudo di un dispositivo)

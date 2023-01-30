@@ -1,4 +1,4 @@
-﻿Public Class CanEtsdn
+﻿Public Class CanCommunication
 
     Protected tmr As New Stopwatch
     Dim tmr_heartbeat As New Stopwatch

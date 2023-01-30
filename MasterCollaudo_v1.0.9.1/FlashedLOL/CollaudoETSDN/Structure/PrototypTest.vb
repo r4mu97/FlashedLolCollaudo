@@ -8,13 +8,13 @@ Public Class PrototypTest
     Protected nameOftest As String
     Protected viewError As String
     Protected varTxEtsdn As New VarTxToETSDN
-    Protected canEtsdnVar As New CanEtsdn
+    Protected canEtsdnVar As New CanCommunication
     Protected tmrSlidePanel As Stopwatch
 
     Public Sub New()
         Me.tmrTest = New Stopwatch
         Me.varTxEtsdn = New VarTxToETSDN
-        Me.canEtsdnVar = New CanEtsdn
+        Me.canEtsdnVar = New CanCommunication
         Me.testSuccess = False
         Me.testCompleted = False
         Me.tmrSlidePanel = New Stopwatch
