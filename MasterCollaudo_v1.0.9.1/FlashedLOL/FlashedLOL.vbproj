@@ -198,44 +198,44 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Checksum.vb" />
-    <Compile Include="CollaudoETSDN\CanComunicaation\CanEtsdn.vb" />
-    <Compile Include="CollaudoETSDN\ErrorList\TestError.vb" />
-    <Compile Include="CollaudoETSDN\MongoDB\MongoDBdata.vb" />
-    <Compile Include="CollaudoETSDN\Structure\CreateCSVfile.vb" />
-    <Compile Include="CollaudoETSDN\Structure\PrototypTest.vb" />
-    <Compile Include="CollaudoETSDN\Structure\TestExecutor.vb" />
-    <Compile Include="CollaudoETSDN\TestResult\ManageGraphics\pBoxPower.vb">
+    <Compile Include="TestDevices\CanComunicaation\CanEtsdn.vb" />
+    <Compile Include="TestDevices\ErrorList\TestError.vb" />
+    <Compile Include="TestDevices\MongoDB\MongoDBdata.vb" />
+    <Compile Include="TestDevices\Structure\CreateCSVfile.vb" />
+    <Compile Include="TestDevices\Structure\PrototypTest.vb" />
+    <Compile Include="TestDevices\Structure\TestExecutor.vb" />
+    <Compile Include="TestDevices\TestResult\ManageGraphics\pBoxPower.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CollaudoETSDN\TestResult\ManageGraphics\Structure\TestResultView.vb">
+    <Compile Include="TestDevices\TestResult\ManageGraphics\Structure\TestResultView.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CollaudoETSDN\Structure\TestResult.vb" />
-    <Compile Include="CollaudoETSDN\Structure\TestSuite.vb" />
-    <Compile Include="CollaudoETSDN\TestResult\TestResult5v.vb" />
-    <Compile Include="CollaudoETSDN\TestResult\TestResultAcc.vb" />
-    <Compile Include="CollaudoETSDN\TestResult\TestResultAnalog.vb" />
-    <Compile Include="CollaudoETSDN\TestResult\TestResultInputs.vb" />
-    <Compile Include="CollaudoETSDN\TestResult\TestResultRele.vb" />
-    <Compile Include="CollaudoETSDN\Tests\Test5VsEtsdn.vb" />
-    <Compile Include="CollaudoETSDN\Tests\TestAccEtsdn.vb" />
-    <Compile Include="CollaudoETSDN\Tests\TestAnalogEtsdn.vb" />
-    <Compile Include="CollaudoETSDN\Tests\TestInputsEtsdn.vb" />
-    <Compile Include="CollaudoETSDN\Tests\TestPower.vb" />
-    <Compile Include="CollaudoETSDN\Tests\TestReleEtsdn.vb" />
-    <Compile Include="CollaudoETSDN\CanComunicaation\VarRxFromETSDN.vb" />
-    <Compile Include="CollaudoETSDN\CanComunicaation\VarTxToETSDN.vb" />
-    <Compile Include="CollaudoETSDN\TestResult\TestResultPower.vb" />
+    <Compile Include="TestDevices\Structure\TestResult.vb" />
+    <Compile Include="TestDevices\Structure\TestSuite.vb" />
+    <Compile Include="TestDevices\TestResult\TestResult5v.vb" />
+    <Compile Include="TestDevices\TestResult\TestResultAcc.vb" />
+    <Compile Include="TestDevices\TestResult\TestResultAnalog.vb" />
+    <Compile Include="TestDevices\TestResult\TestResultInputs.vb" />
+    <Compile Include="TestDevices\TestResult\TestResultRele.vb" />
+    <Compile Include="TestDevices\Tests\Test5VsEtsdn.vb" />
+    <Compile Include="TestDevices\Tests\TestAccEtsdn.vb" />
+    <Compile Include="TestDevices\Tests\TestAnalogEtsdn.vb" />
+    <Compile Include="TestDevices\Tests\TestInputsEtsdn.vb" />
+    <Compile Include="TestDevices\Tests\TestPower.vb" />
+    <Compile Include="TestDevices\Tests\TestReleEtsdn.vb" />
+    <Compile Include="TestDevices\CanComunicaation\VarRxFromETSDN.vb" />
+    <Compile Include="TestDevices\CanComunicaation\VarTxToETSDN.vb" />
+    <Compile Include="TestDevices\TestResult\TestResultPower.vb" />
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Form1.vb" />
-    <Compile Include="CollaudoETSDN\CollaudoETSDN.Designer.vb">
+    <Compile Include="TestDevices\CollaudoETSDN.Designer.vb">
       <DependentUpon>CollaudoETSDN.vb</DependentUpon>
     </Compile>
-    <Compile Include="CollaudoETSDN\CollaudoETSDN.vb">
+    <Compile Include="TestDevices\CollaudoETSDN.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmPeak.Designer.vb">
@@ -313,7 +313,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Form1.Designer.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="CollaudoETSDN\CollaudoETSDN.resx">
+    <EmbeddedResource Include="TestDevices\CollaudoETSDN.resx">
       <DependentUpon>CollaudoETSDN.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPeak.resx">
